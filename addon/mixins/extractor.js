@@ -47,7 +47,7 @@ export default Ember.Mixin.create({
       this.extractSingleLink(store, type, hash, link);
     }
 
-    if (Ember.keys(hash.links).length === 0) delete hash.links;
+    if (Object.keys(hash.links).length === 0) delete hash.links;
   },
 
   extractSingleLink: function(store, type, hash, link) {
